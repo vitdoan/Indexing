@@ -15,12 +15,12 @@ Posting is a list of [String sceneId, String playId, int[] positions].
 - The others are used to handle file input output.
 
 # Dependencies
-### matplotlib
-### json
-### gzip
-### os
-### sys
-### re
+* matplotlib
+* json
+* gzip
+* os
+* sys
+* re
 
 # Building
 ### In your local environment, execute: 
