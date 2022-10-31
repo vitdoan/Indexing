@@ -58,12 +58,13 @@ def query():
             for word in word_phrase_K:
                 if word in scene_play_list:
                     result.append(scene_play_list[word])
-            and_list = set(result[0])
-            i = 1
-            while i < len(result):
-                and_list = and_list & set(result[i])
-                i += 1
-            docs = and_list
+            if len(result) > 0:
+                and_list = set(result[0])
+                i = 1
+                while i < len(result):
+                    and_list = and_list & set(result[i])
+                    i += 1
+                docs = and_list
         else:
             or_list = set()
             for word in word_phrase_K:
@@ -72,7 +73,6 @@ def query():
                         or_list.add(s)
             docs = or_list
         
-        print(docs)
         output_file = open(outputFolder + "/" + query_name + ".txt", "w")
         for l in list(sorted(docs)):
             output_file.write(l + "\n")
