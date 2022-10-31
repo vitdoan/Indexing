@@ -10,10 +10,17 @@ Posting is a list of [String sceneId, String playId, int[] positions].
 2 dictionaries are also created: scene_list(term, String[] scene_Id) and play_list(term, String[] play_Id) to latter use in my query function. 
 
 # Libraries
-### matplotlib is used to graph the plot. The others are used to handle file input output.
+### matplotlib 
+- Used to graph the plot. 
+- The others are used to handle file input output.
 
 # Dependencies
 ### matplotlib
+### json
+### gzip
+### os
+### sys
+### re
 
 # Building
 ### In your local environment, execute: 
