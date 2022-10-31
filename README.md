@@ -2,7 +2,9 @@
 ### My indexing and query functions are both in src/indexer.py
 
 # Description
-### In my indexer function, I iterated through all documents and built the inverted index with the form of Map(Term, List(Posting)). Posting is a list of [String sceneId, String playId, int[] positions]. I also created 2 dictionaries: scene_list(term, String[] scene_Id) and play_list(term, String[] play_Id) to latter use in my query function. 
+### Indexer function, 
+Documents are parsed and iterated to build the inverted index with the form of Map(Term, List(Posting)). 
+Posting is a list of [String sceneId, String playId, int[] positions]. I also created 2 dictionaries: scene_list(term, String[] scene_Id) and play_list(term, String[] play_Id) to latter use in my query function. 
 
 # Libraries
 ### matplotlib is used to graph the plot. The others are used to handle file input output.
