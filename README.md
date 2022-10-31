@@ -4,7 +4,10 @@
 # Description
 ### Indexer function, 
 Documents are parsed and iterated to build the inverted index with the form of Map(Term, List(Posting)). 
-Posting is a list of [String sceneId, String playId, int[] positions]. I also created 2 dictionaries: scene_list(term, String[] scene_Id) and play_list(term, String[] play_Id) to latter use in my query function. 
+
+Posting is a list of [String sceneId, String playId, int[] positions]. 
+
+2 dictionaries are also created: scene_list(term, String[] scene_Id) and play_list(term, String[] play_Id) to latter use in my query function. 
 
 # Libraries
 ### matplotlib is used to graph the plot. The others are used to handle file input output.
